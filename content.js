@@ -1,3 +1,8 @@
+
+console.log("Apel Mahmud");
+
+
+/*
 console.log("apel mahmud");
 
 var para = document.getElementsByTagName('h4');
@@ -10,3 +15,5 @@ function gotMessage(message, sender, sendResponse) {
 		document.write('a');
 	}
 }
+
+*/
