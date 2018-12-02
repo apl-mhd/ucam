@@ -5,7 +5,7 @@ function lol(){
 	console.log('lol')
 }
 
-lol();
+
 
 chrome.browserAction.onClicked.addListener(buttonClicked);
 

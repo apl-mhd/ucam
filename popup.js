@@ -1,33 +1,49 @@
+chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+  chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
+    console.log("send success");
+  });
+});
 
 /*
-function setup () 
-{
-	let userInput = select('#userInput');
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+    sendResponse({
+        data: "I am fine, thank you. How is life in the background?"
+    }); 
+});
+*/
+/*
+let userinput = select('#userinput');
+userinput.text(changeText);
 
-	userInput.text(newText);
+console.log("got tetxt");
 
-	function newText(){
+function changeText(){
 
-		let params = {
+	console.log("got change Text");
 
+	chrome.tabs.query(params,gotTab);
+
+	let params = {
 			active : true,
 			currentWindow : true
 		}
 
-		chrome.tabs.query(params,gotTab);
-
 		function gotTab(tabs){
+			console.log("got tab");
+			
+			let message = userInput.value();
 
-			console.log(tabs);
+			console.log(message);
 
-		let message = userInput.value();
-		let msg = {
-			txt : "hello"
-		} 
+			chrome.tabs.sendMessage(tabs[0].id, message);
 
-		chrome.tabs.sendMessage(tabs[0].id,msg);
-	}
+		}
 
 
-	}
 }
+
+*/
+
+//chrome.tabs.sendMessage("message");
+
+
