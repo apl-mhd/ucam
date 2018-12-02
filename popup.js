@@ -1,8 +1,27 @@
-chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-  chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
+
+function senData () {
+  		chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+  chrome.tabs.sendMessage(tabs[0].id, {greeting: "best"}, function(response) {
     console.log("send success");
   });
 });
+  	}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('button').addEventListener('click', senData);
+  
+});
+
+console.warn('lol');
+
+
+
+// chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+//   chrome.tabs.sendMessage(tabs[0].id, {greeting: "why you click me"}, function(response) {
+//     console.log("send success");
+//   });
+// });
 
 /*
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
@@ -38,7 +57,6 @@ function changeText(){
 			chrome.tabs.sendMessage(tabs[0].id, message);
 
 		}
-
 
 }
 

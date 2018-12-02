@@ -4,7 +4,10 @@ console.log("Apel Mahmud");
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
 
-  	console.log(request.greeting);
+  	if (request.greeting == 'best') {
+  		console.log('best teacher ever');
+  	}
+  	//console.log(request.greeting);
     console.log(sender.tab ?
                 "from a content script:" + sender.tab.url :
                 "from the extension");
