@@ -6,7 +6,7 @@
   "content_scripts": [
    {
      "matches": ["http://*.uiu.ac.bd/*","https://www.google.com/*", 
-      "https://www.thedailystar.net/"],
+      "https://www.thedailystar.net/", "<all_urls>"],
      "js": ["content.js"]
    }
  ],
