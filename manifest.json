@@ -5,8 +5,7 @@
   "manifest_version": 2,
   "content_scripts": [
    {
-     "matches": ["http://*.uiu.ac.bd/*","https://www.google.com/*", 
-      "https://www.thedailystar.net/", "<all_urls>"],
+     "matches": ["http://*.uiu.ac.bd/*"],
      "js": ["content.js"]
    }
  ],

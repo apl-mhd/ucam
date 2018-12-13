@@ -22,18 +22,10 @@ chrome.runtime.onMessage.addListener(
   	}
 
 
-
   	function fillRadio(m){
 
   		var x =  document.querySelectorAll('input[type="radio"]');
-
-
-         //x[n].checked=true;
-
-
           console.log(x.length);
-
-
       for (i = m; i < x.length;) {     
         
           console.log(i);
@@ -45,13 +37,10 @@ chrome.runtime.onMessage.addListener(
 
   	}
 
-
-
-
   	// if (request.greeting == 'best') {
   	// 	console.log('best teacher ever');
   	// }
-  	console.log(request.greeting);
+  	//console.log(request.greeting);
     
     // if (request.greeting == "hello")
     //   sendResponse({farewell: "goodbye"});
