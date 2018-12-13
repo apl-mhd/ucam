@@ -1,6 +1,6 @@
 {
-  "name": "UCAM",
-  "version": "1.0",
+  "name": "UCAM Course Evaluation",
+  "version": "1.02",
   "description": "Build an Extension!",
   "manifest_version": 2,
   "content_scripts": [
@@ -19,7 +19,7 @@
 
   "browser_action":{
     "default_icon": {
-        "16": "images/16.png",
+        "16": "images/32.png",
         "32": "images/32.png",
         "48": "images/48.png",
         "128": "images/128.png"

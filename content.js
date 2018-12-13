@@ -5,6 +5,11 @@ console.log("Orin <3");
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
 
+  var x =  document.querySelectorAll('select[name="ctl00$MainContainer$ddlExpectedGrade"]')[0].options;
+  x[1].selected=true;
+
+
+
   	if (request.greeting == 'good') {
 
   			fillRadio(0);	
@@ -25,10 +30,10 @@ chrome.runtime.onMessage.addListener(
   	function fillRadio(m){
 
   		var x =  document.querySelectorAll('input[type="radio"]');
-          console.log(x.length);
+          //console.log(x.length);
       for (i = m; i < x.length;) {     
         
-          console.log(i);
+          //console.log(i);
           x[i].checked=true;
           i +=5;
 
