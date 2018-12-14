@@ -1,8 +1,7 @@
-1. Install UCAM extensions
-2. Restart your browser
-3. Login Your UCAM account
-4. Goto your course evaluation page
-5. Select course and expected grade 
-6.Click on UCAM icone
-7.Then you select "Good ,Average  or Below Average" any of them
-8. Now click on save
+1. Install UCAM extension ( https://bit.ly/2UHTDTJ )
+2. Login Your UCAM account
+3. Goto your Course Evaluation page
+4. Select Course and Expected Grade 
+5. Click on UCAM extension icon from browser top right corner
+6. Then select either Good or Average or Below Average (Any 1 of them)
+7. Now click on Save
