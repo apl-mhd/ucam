@@ -29,16 +29,26 @@ chrome.runtime.onMessage.addListener(
 
   	function fillRadio(m){
 
-  		var x =  document.querySelectorAll('input[type="radio"]');
+  		/* var x =  document.querySelectorAll('input[type="radio"]');
           //console.log(x.length);
       for (i = m; i < x.length;) {     
         
           //console.log(i);
           x[i].checked=true;
-          i +=5;
+		  i +=5; */
+
+		  //NEW CODE @pavstar619
+		  //Theory course i<17
+		  //Lab course i<14?? (Haven't tested yet)
+		  var i;
+		  var x=1;
+		  for(i = 1; i<17;i++){
+			  document.getElementById('ctl00_MainContainer_rbtTheory'+x+'_'+m).checked = true;
+			  x++;
+		  }
 
         
-    }
+    
 
   	}
 
